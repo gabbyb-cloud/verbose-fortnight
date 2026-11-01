@@ -1,0 +1,39 @@
+
+name: Welcome contributors
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: read
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Post welcome message
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          cat > welcome.md <<'EOF'
+          👋 Thanks for opening an issue in ProofForge!
+
+          This is an automated response from the project.
+
+          Please review:
+          - [Contribution guidelines](../../blob/main/CONTRIBUTING.md)
+          - [Challenge 001](../../blob/main/challenges/tenant_boundary/README.md)
+
+          Include reproducible steps, expected behavior, and relevant test results when applicable.
+
+          The maintainer will review contributions when available. Automated replies do not indicate approval or acceptance.
+          EOF
+
+          gh issue comment "$ISSUE_NUMBER" \
+            --repo "$REPO" \
+            --body-file welcome.md
