@@ -24,7 +24,7 @@ The first challenge is a synthetic Python function that improperly returns a req
 
 ## Contribute
 
-Start with the [challenge guide](challenges/tenant_boundary/README.md) and [contribution instructions](CONTRIBUTING.md). Open an issue for a proposed task, then submit a narrow pull request. Maintainer approval is required for merges. See [security guidance](SECURITY.md) and our [code of conduct](CODE_OF_CONDUCT.md).
+Start with the [challenge guide](challenges/tenant_boundary/README.md) and [contribution instructions](CONTRIBUTING.md). Open an issue for a proposed task, then submit a narrow pull request. All pull requests are reviewed by the maintainer before merging. See [security guidance](SECURITY.md) and our [code of conduct](CODE_OF_CONDUCT.md).
 
 ## Engineering principles
 
