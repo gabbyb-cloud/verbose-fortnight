@@ -2,7 +2,7 @@
 
 **Verify behavior. Build evidence. Improve software together.**
 
-ProofForge is a small, solo-maintained open-source lab for reproducible software-quality challenges. It welcomes developers, QA engineers, and security-minded contributors who want to add tests, investigate defects, and review narrowly scoped fixes. Contributors are welcome but are not required for the maintainer to continue building.
+Verbose Fortnight is a small, solo-maintained open-source lab for reproducible software-quality challenges. It welcomes developers, QA engineers, and security-minded contributors who want to add tests, investigate defects, and review narrowly scoped fixes. Contributors are welcome but are not required for the maintainer to continue building.
 
 ## Start here
 

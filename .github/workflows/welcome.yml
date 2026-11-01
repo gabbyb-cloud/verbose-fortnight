@@ -21,7 +21,7 @@ jobs:
           REPO: ${{ github.repository }}
         run: |
           cat > welcome.md <<'EOF'
-          👋 Thanks for opening an issue in ProofForge!
+          👋 Thanks for opening an issue in Verbose Fortnight!
 
           This is an automated response from the project.
 

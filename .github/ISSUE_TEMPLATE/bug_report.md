@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Report unexpected behavior in ProofForge tooling or documentation
+about: Report unexpected behavior in Verbose Fortnight tooling or documentation
 labels: bug
 ---
 
