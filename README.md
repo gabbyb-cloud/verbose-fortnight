@@ -1,4 +1,4 @@
-# ProofForge
+# Verbose Fortnight
 
 **Verify behavior. Build evidence. Improve software together.**
 
