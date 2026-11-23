@@ -17,11 +17,10 @@ RECORDS = {
 
 
 def get_request(context: RequestContext, request_id: str) -> dict | None:
-    """Look up a request visible to context; returns None if unavailable.
-
-    CHALLENGE: This starter contains a deliberate authorization defect.
-    """
+    """Look up a request visible to context; returns None if unavailable."""
     record = RECORDS.get(request_id)
     if record is None:
+        return None
+    if record["tenant_id"] != context.tenant_id:
         return None
     return dict(record)
